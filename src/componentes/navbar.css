@@ -1,0 +1,32 @@
+.barra{
+    width: 100%;
+    height: 75px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.logo{
+    width:100px;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.boton-login{
+    margin-top: 20px;
+}
