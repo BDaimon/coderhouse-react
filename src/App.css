@@ -1,5 +1,40 @@
 .App {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+
+.pagina {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.grid {
+  margin: 50px;
+  width: 290px;
+  height: 170px;
+  text-align: center;
+  background-color: rgb(136, 219, 223);
+}
+
+@media screen and (max-width: 769px) {
+  .pagina  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.suma-resta{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.pie{
+  background-color: chocolate;
+  height: 50px;
+  text-align: center;
 }
