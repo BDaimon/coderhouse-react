@@ -1,13 +1,15 @@
 import "./navbar.css";
 import logo from "../imagenes/logo-modified.png";
-import CartWidget from "./CartWidget";
+import {Link, NavLink} from 'react-router-dom'
+import CartWidget from "./CartWidget/CartWidget";
+
 
 const NavBar = () => {
   return (
-    <div className="barra">
+    <nav className="barra">
       <div className="container-titulo">
         <div>
-          <img className="logo" src={logo} alt="logo" />
+        <Link to='/'><img className="logo" src={logo} alt="logo" /></Link> 
         </div>
         <h4 className="titulo">Dulce Mascota</h4>
         <p className="sub-titulo">Food Pets</p>
@@ -15,22 +17,29 @@ const NavBar = () => {
       <div className="menu">
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <NavLink className={({isActive})=>isActive ? 'claseActive': 'claseInactive'} to="/">Inicio</NavLink>
           </li>
           <li>
-            <a href="#">Nosotros</a>
+            <NavLink className={({isActive})=>isActive ? 'claseActive': 'claseInactive'} to="/productos">Productos</NavLink>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <NavLink className={({isActive})=>isActive ? 'claseActive': 'claseInactive'} to="/productos/perro">Para Perros</NavLink>
           </li>
-          <li></li>
+          
+          <li>
+            <NavLink className={({isActive})=>isActive ? 'claseActive': 'claseInactive'} to="/productos/gato">Para Gatos</NavLink>
+          </li>
+          <li>
+            <NavLink className={({isActive})=>isActive ? 'claseActive': 'claseInactive'} to="/contacto">Contacto</NavLink>
+          </li>
+          <li>
+            <CartWidget/>
+          </li>
+            
         </ul>
       </div>
-      <CartWidget />
-      <div className="content-boton-login">
-        <button className="boton-login">Login</button>
-      </div>
-    </div>
+    </nav>
+
   );
 };
 export default NavBar;

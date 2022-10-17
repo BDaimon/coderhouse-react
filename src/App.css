@@ -1,40 +1,217 @@
 .App {
+
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: aliceblue;
+  background-image: url("./imagenes/subtle-prism.png");
+  background-size: cover;
 }
-
-
-.pagina {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+.inicio{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
-
-.grid {
-  margin: 50px;
-  width: 290px;
-  height: 170px;
+.inicio1, .inicio2, .inicio3, .inicio4 {
+  margin: 25px;
+  padding: 25px;
+  width: 450px;
+   
+}
+.inicio1{
+background-color: #00FFAB;
+}
+.inicio2{
+background-color: #7FBCD2;
+}
+.inicio3{
+background-color: #FF9494;
+}
+.inicio4{
+background-color: #6EB6FF;
+}
+.msjInicio{
+  color: rgb(58, 109, 100);
+}
+.bienvenidos{
+  color: rgb(58, 109, 100);
+}
+p {
   text-align: center;
-  background-color: rgb(136, 219, 223);
+  font-weight: 500;
 }
 
-@media screen and (max-width: 769px) {
-  .pagina  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-.suma-resta{
+.suma-resta {
   display: flex;
   flex-direction: row;
   text-align: center;
 }
-.pie{
-  background-color: chocolate;
-  height: 50px;
+.cifra {
+  font-weight: 700;
+  color: gray;
   text-align: center;
 }
+
+
+.contenedor-lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.cargando-container{
+  text-align: center;
+  width: 100%;
+}
+
+
+.card-productos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.contenido-producto {
+  width: 160px;
+  margin: 50px;
+  padding: 15px;
+  text-align: center;
+  border: gray 2px solid;
+  border-radius: 20px;
+  
+}
+.imagenProducto {
+  width: 130px;
+  margin-bottom: 20px;
+  border-radius: 10%;
+}
+.cargando {
+  text-align: center;
+  color: rgb(58, 109, 100);
+}
+
+.imgcard {
+  width: 70px;
+  margin: 10px;
+}
+.contenedorCard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto  {
+  color: rgb(58, 109, 100);
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 30px;
+}
+.claseActive{
+  color: red;
+}
+.claseInactive{
+  color: gray;
+}
+.contenedor-detalle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fondoModal{
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mostrarModal{
+  background-color: rgb(240, 240, 240);
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  text-align: center;
+}
+.contenedor-detalle{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contadorContainer{
+  border-radius: 5%;
+    text-align: center;
+    /* background-color: #b1a0ef; */
+    width: 220px;
+    height: 150px;
+}
+.botonesContenedor{
+  margin-top: 40px;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.boton{
+  background: white;
+  border: black 1px solid;
+  border-radius: 3px;
+}
+.cantidad{
+  background-color: white;
+  width: 100px;
+}
+.cartContainer{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contenidoaCarrito{
+  border: gray 2px solid;
+  border-radius: 20px;
+  width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.imagenEnCarrito{
+  width: 180px;
+  border-radius: 10%;
+}
+.botonVaciar{
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.carritoVacio{
+  color:rgb(58, 109, 100);
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
