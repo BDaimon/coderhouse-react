@@ -7,10 +7,10 @@ import {FaPhoneSquareAlt} from "@react-icons/all-files/fa/FaPhoneSquareAlt"
 import {BiDirections} from "@react-icons/all-files/bi/BiDirections"
 import '../App.css'
 import {db} from "../../src/utils/firebase"
-import {collection, getDocs, limit, query, where} from "firebase/firestore"
+import {collection, getDocs, query} from "firebase/firestore"
 
 
-const Contacto = () => {
+ const Contacto = () => {
 
   // useEffect( ()=>{
   //   const getData = async()=>{

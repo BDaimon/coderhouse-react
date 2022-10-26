@@ -1,6 +1,6 @@
 import "../src/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "../src/Componentes/Navbar";
+import NavBar from "./Componentes/Navbar";
 import ItemListContainer from "./Componentes/ItemListContainer/ItemListContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contacto from "./Componentes/Contacto";
@@ -20,7 +20,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Inicio/>} />
               <Route path="/productos" element={<ItemListContainer />} />
-              <Route path="/contacto" element={<Contacto />} />
+              <Route path="/contacto" element={<Contacto/>} />
               <Route path="/productos/:categoriaId" element={<ItemListContainer />}/>
               <Route path="/item/:productoId" element={<ItemDetalleContainer />}/>
               <Route path="/carrito" element={<CartContainer />} />
